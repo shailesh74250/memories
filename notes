@@ -1,0 +1,17 @@
+What features implemented
+- Material UI implementation
+- Project layout frontend
+- Backend project structure
+- Authentication JWT
+- Social login using google
+- Pagination
+- CRUD operation in Backend
+- MongoDB connectivity
+- React-Redux
+- Redux-Thunk
+- Comment post, Share post, Like post
+- Database Model
+- Responsive 
+- Deployment over Heroku
+- Searching among the posts by tags or any string 
+- Frontend project can be deploy over netlify (It's very easy)
