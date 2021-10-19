@@ -9,7 +9,40 @@ export const getPosts = async (req, res) => {
     }
 }
 
+export const viewPost = async (req, res) => {
+    try {
+        const post = req.body;
+        const newPost = new PostMessage(post);
+        await newPost.save();
+        res.status(201).json(newPost);
+    } catch (error) {
+        res.status(409).json({ message: error.message });
+    }
+}
+
 export const createPost = async (req, res) => {
+    try {
+        const post = req.body;
+        const newPost = new PostMessage(post);
+        await newPost.save();
+        res.status(201).json(newPost);
+    } catch (error) {
+        res.status(409).json({ message: error.message });
+    }
+}
+
+export const updatePost = async (req, res) => {
+    try {
+        const post = req.body;
+        const newPost = new PostMessage(post);
+        await newPost.save();
+        res.status(201).json(newPost);
+    } catch (error) {
+        res.status(409).json({ message: error.message });
+    }
+}
+
+export const deletePost = async (req, res) => {
     try {
         const post = req.body;
         const newPost = new PostMessage(post);
