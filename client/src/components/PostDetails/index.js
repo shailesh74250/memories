@@ -1,0 +1,1 @@
+export { PostDetails as default } from './postDetails';
