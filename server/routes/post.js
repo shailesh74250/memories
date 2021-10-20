@@ -3,11 +3,13 @@ import { getPosts, createPost, viewPost, deletePost, updatePost } from '../contr
 
 const router = express.Router();
 
+import auth from '../middleware/auth.js';
+
 router.get('/', getPosts);
-router.post('/', createPost);
+router.post('/', auth, createPost);
 router.get('/:id', viewPost);
-router.delete('/:id', deletePost);
-router.put('/:id', updatePost);
+router.delete('/:id', auth, deletePost);
+router.patch('/:id', auth, updatePost);
 
 export default router;
 

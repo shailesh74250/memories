@@ -25,3 +25,25 @@ Some concept -
 - Now no need to use body parser, its deprecated 
 - No need to pass extra parameter during mongodb connection (but it only work in mongoose updated version)
 
+Decode jwt token 
+- We can get user details from json web token or jwt token in backend while verifying token 
+    if token is verify the we can decode it and get the detail and add that details into request so that later we can use it in controller wherever we want, using this process we can find out user role like - admin, super admin, etc. then according to user role we can proceed request
+- For more info check auth middleware 
+
+Forgot password 
+
+Reset Password 
+
+Authentication using mobile number instead of email 
+
+Authentication using one of them like - using email or phone number 
+
+Authentication verification opt or email 
+
+Pagination 
+
+Search by tags or any string
+
+Sort data
+
+Update, delete, view, create data
